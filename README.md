@@ -10,3 +10,11 @@ There is no mock or stub to keep them _simple_.
 So, all the [DAO](./test/fendshui/fengshui.dao.tests.ts) and [services](./test/fendshui/fengshui.services.tests.ts) call directly the REST [fengshui-api](https://fengshui-api.com/).
 
 To test intents, I'm using the [convMock](/test/fwk/convMock.ts). It's a simple wrapper of conversation to test the responses from intent.
+
+To run test:
+`npm test`
+
+## Deploy
+To deploy this function on [Google Cloud Function](), I'm using [Serverless](www.serverless.com). This framework is really simple, and provides a simple way to deploy on GCP, AWS Lambda, ...
+Command to deploy:
+`sls deploy`
