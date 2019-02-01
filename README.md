@@ -7,6 +7,20 @@ It's the tool that _understands_ user language, parses data and sends back to fu
 
 The dialogflow part has been exported for your confort in Dialogflow folder.
 
+## Intents / features
+### Default
+Default features are the intents to make the bot pleasant and helpful.
+* Welcome
+* Help
+* Goodbye
+* Fallback
+
+### Feng Shui features
+Here we have the _real_ Action functions. 
+* Get Chineses astrological sign
+* Get Kua Number
+* Advises 
+
 ## Test
 The tests run with [mochajs](https://mochajs.org/).
 There is no mock or stub to keep them _simple_. 
