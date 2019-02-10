@@ -1,6 +1,9 @@
 # Action Fengshui
 Let's play with Fengshui through [fengshui-api](https://fengshui-api.com/) on our Google Assistant.
 
+## Tutorial 
+You can find a tutorial on how to implement it on this (github page)[https://stephanec.github.io/ActionFengShui/].
+
 ## DialogFlow
 [Dialogflow](www.dialogflow.com) is in charge of Natural Language Processing. 
 It's the tool that _understands_ user language, parses data and sends back to fullfilment (this function) everything needed to process message.
