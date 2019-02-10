@@ -4,8 +4,8 @@ Action Fengshui works with DIlaogflow.
 ## Create account
 The official doc is (here)[https://dialogflow.com/docs/getting-started/create-account].
 
-## Create Project
-The official doc is [here](https://dialogflow.com/docs/getting-started/first-agent).
+## Create Fengshui project
+The official doc is (here)[https://dialogflow.com/docs/getting-started/first-agent].
 
 ## Import project
 1. Go to your project settings
@@ -14,3 +14,5 @@ The official doc is [here](https://dialogflow.com/docs/getting-started/first-age
 
 3. Finally _restore from ZIP_ and select the (Fengshui.zip)[../dialogflow/FengShui.zip] available in dialogflow folder.
 
+Now, you Dialogflow project is fully configured. You can see all the available intents.
+![Dialogflow project](img/dialogflow_project.png)
