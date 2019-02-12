@@ -1,7 +1,7 @@
 // Import the appropriate service and chosen wrappers
 import {
   dialogflow,
-  DialogflowIntentHandler, DialogflowConversation
+  DialogflowConversation
 } from 'actions-on-google'
 
 import { 

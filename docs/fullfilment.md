@@ -25,3 +25,48 @@ As _always, we have some layer in our app to improve readability, testability an
 ### Handler
 In serverless app, you have an program input called the handler. 
 You can find it in the [index.ts](../../index.ts).
+
+This file is pretty simple. 
+
+### Intents
+*The imports*
+`import {
+  dialogflow,
+  DialogflowConversation
+} from 'actions-on-google'
+`
+We retrieve dialogflow dependencies. 
+
+`const functions = require('firebase-functions');`
+Now, we get firebase function. 
+
+`import { 
+  kuaNumberIntent,
+  astroSignIntent,
+  defKuaNumber,
+  advise,
+  defFengshui,
+  etymologieFengshuiIntent
+} from './fengshui/fengshui.intents';`
+To finish in my imports, i get my intents functions. 
+
+Use Everythings
+`const app = dialogflow()`
+Create the dialogflow app. 
+
+`app.intent('Default Welcome Intent', welcomeIntent)`
+Register the _Default Welcome Intent_ intent. You can see as many intents registrations as intents with fullfilment in Dialogflow. The name are the same. Here, we write that for all _Default Welcome Intent_, use _welcomeIntent_ function.
+
+`app.intent('Default Fallback Intent', (conv: DialogflowConversation) => {
+  conv.ask(`I didn't understand. Can you tell me something else?`)
+})`
+If no intent found, let's handle the fallback.
+
+exports.http = functions.https.onRequest(app);
+And finally, we export the function through firebase function.
+Here, I named the function _http_. You can call it whatever you want. It just has to match the handler name that you put in serverless.xml
+
+Here, we have a set everything to run our intents. Let's see the associated intents functions.
+
+### Intents.
+
